@@ -3,22 +3,18 @@
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
 # Required
-version: 2
+version: 2 # <Tutor: this indicates the version of this file, you should always use the one indicated by readthedocs>
 
 # Set the OS, Python version and other tools you might need
 build:
-  os: ubuntu-22.04
+  os: ubuntu-22.04 # <Tutor: this indicates the image of the OS used by docker to test if the program is running>
   tools:
-    python: "3.11"
-    # You can also specify other tool versions:
-    # nodejs: "19"
-    # rust: "1.64"
-    # golang: "1.19"
+    python: "3.11" # <Tutor: since this is a python application, you need to indicate which python version is used for running the program>
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
    configuration: docs/conf.py
-
+   fail_on_warning: false  # <Tutor: this will make your readthedocs build fail in case of ANY warning when set to true>
 # Optionally build your docs in additional formats such as PDF and ePub
 # formats:
 #    - pdf

@@ -2,7 +2,6 @@
 
 # -- Project information
 
-master_doc = 'docs' # trying the following solution: https://stackoverflow.com/questions/56336234/build-fail-sphinx-error-contents-rst-not-found
 project = 'Lumache'
 copyright = '2021, Graziella'
 author = 'Graziella'

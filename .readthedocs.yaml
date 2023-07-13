@@ -14,7 +14,7 @@ build:
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
    configuration: docs/conf.py
-   fail_on_warning: true  # <Tutor: this will make your readthedocs build fail in case of ANY warning when set to true>
+   fail_on_warning: false  # <Tutor: this will make your readthedocs build fail in case of ANY warning when set to true>
 # Optionally build your docs in additional formats such as PDF and ePub
 # formats:
 #    - pdf

@@ -20,6 +20,12 @@ sphinx:
 #    - pdf
 #    - epub
 
+python:
+  # Install our python package before building the docs
+  install:
+    - method: pip # <Tutor: unless you indicate and package manager, readthedocs will not be able to install some packages that are necessary for the project>
+      path: . # <Tutor: this probably indicates in which path pip will install packages>
+
 # Optional but recommended, declare the Python requirements required
 # to build your documentation
 # See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
